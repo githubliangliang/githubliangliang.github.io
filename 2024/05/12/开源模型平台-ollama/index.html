@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>mongodb开启权限 | Hexo</title>
-  <meta name="keywords" content=" mongodb ">
-  <meta name="description" content="mongodb开启权限 | Hexo">
+  <title>开源模型平台-ollama | Hexo</title>
+  <meta name="keywords" content=" 大模型 , ollama ">
+  <meta name="description" content="开源模型平台-ollama | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="文章分类">
@@ -355,9 +355,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-mongodb开启权限" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-开源模型平台-ollama" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">mongodb开启权限</h1>
+        <h1 class="article-title">开源模型平台-ollama</h1>
     
     <div class="article-meta">
         
@@ -367,7 +367,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="mongodb">mongodb</a>
+            <a  data-rel="AI">AI</a>
             
         </span>
         
@@ -375,14 +375,16 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">mongodb</a>
+            <a class="color4">大模型</a>
+            
+            <a class="color2">ollama</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-05-06 16:16:43'>2024-05-06 15:43</time>
+            Created At : <time class="date" title='Updated At: 2024-05-12 17:34:56'>2024-05-12 16:42</time>
         
     </div>
     <div class="article-meta">
@@ -404,7 +406,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95"><span class="toc-text">登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E4%B8%AD%E5%BA%93"><span class="toc-text">选中库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7"><span class="toc-text">创建用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%80%E5%87%BA%EF%BC%8C%E9%87%8D%E6%96%B0%E7%99%BB%E5%BD%95"><span class="toc-text">退出，重新登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E9%9B%86%E5%90%88"><span class="toc-text">创建集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E6%89%80%E6%9C%89%E9%9B%86%E5%90%88"><span class="toc-text">查询所有集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text">注意</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ollama"><span class="toc-text">ollama</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker"><span class="toc-text">docker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B"><span class="toc-text">下载模型</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -420,24 +422,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongosh</span><br></pre></td></tr></table></figure>
+        <h2 id="ollama"><a href="#ollama" class="headerlink" title="ollama"></a>ollama</h2><p>ollama是一个开源大模型部署平台，提供许多厂家的开源大模型，并支持下载到本地运行。以下是简单的部署使用。</p>
+<p>github: <a target="_blank" rel="noopener" href="https://github.com/ollama/ollama">https://github.com/ollama/ollama</a><br>模型仓库library：<a target="_blank" rel="noopener" href="https://ollama.com/library">https://ollama.com/library</a><br>前端UI：<a target="_blank" rel="noopener" href="https://github.com/open-webui/open-webui">https://github.com/open-webui/open-webui</a><br>简化版UI: <a target="_blank" rel="noopener" href="https://github.com/ollama-webui/ollama-webui-lite">https://github.com/ollama-webui/ollama-webui-lite</a></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><p>运行ollama</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --network=host \</span><br><span class="line">        -v $&#123;PWD&#125;/ollama:/root/.ollama \</span><br><span class="line">        -p 11434:11434 \</span><br><span class="line">        --name ollama \</span><br><span class="line">        ollama/ollama</span><br></pre></td></tr></table></figure>
 
-<h3 id="选中库"><a href="#选中库" class="headerlink" title="选中库"></a>选中库</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># 查询库</span></span></span><br><span class="line">show dbs;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># 选中库</span></span></span><br><span class="line">use xhw_road;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h3><p><font color='red'>一定要在（xhw_road）执行。</font></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(</span><br><span class="line">  &#123;</span><br><span class="line">    user: &quot;road_admin&quot;,</span><br><span class="line">   pwd: &quot;Admin@123456&quot;,</span><br><span class="line">   roles: [ &#123; role: &quot;dbOwner&quot;, db: &quot;xhw_road&quot; &#125; ]</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h3 id="退出，重新登录"><a href="#退出，重新登录" class="headerlink" title="退出，重新登录"></a>退出，重新登录</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongosh --port 27017 -u &quot;road_admin&quot; -p &quot;Admin@123456&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="创建集合"><a href="#创建集合" class="headerlink" title="创建集合"></a>创建集合</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">use xhw_road;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># 创建radar_write的集合</span></span></span><br><span class="line">db.radar_write.insert(&#123;</span><br><span class="line">    id: 1000,</span><br><span class="line">    devc_no: &#x27;1000&#x27;,</span><br><span class="line">    vendor_no: &#x27;1000&#x27;,</span><br><span class="line">	is_deleted: &#x27;N&#x27;,</span><br><span class="line">	channel_no: &#x27;1&#x27;,</span><br><span class="line">    gmt_create: new Date(),</span><br><span class="line">	gmt_modified: new Date()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h3 id="查询所有集合"><a href="#查询所有集合" class="headerlink" title="查询所有集合"></a>查询所有集合</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show collcetions;</span><br></pre></td></tr></table></figure>
-
-<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
-<li>mongosh –port 27017 -u “road_admin” -p “Admin@123456” –authenticationDatabase “xhw_road”</li>
+<p>运行web-ui</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">运行容器（仅CPU）</span></span><br><span class="line">docker run -d \</span><br><span class="line">   --restart unless-stopped \</span><br><span class="line">   --name ollama-webui \</span><br><span class="line">   -p 18080:8080 \</span><br><span class="line">   --add-host=host.docker.internal:机器IP \</span><br><span class="line">   -v $(pwd)/data:/app/backend/data \</span><br><span class="line">   -e OLLAMA_API_BASE_URL=http://机器IP:11434/api \</span><br><span class="line">   -e WEBUI_SECRET_KEY=123456 \</span><br><span class="line">   ghcr.io/open-webui/open-webui:main</span><br></pre></td></tr></table></figure>
+<ul>
+<li>由于ghcr.io&#x2F;open-webui&#x2F;open-webui:main镜像很大，没有科学上网，下载很慢，需要加代理才能下载。<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">代理下载</span></span><br><span class="line">docker pull ghcr.dockerproxy.com/open-webui/open-webui:main</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重命名镜像</span></span><br><span class="line">docker tag ghcr.dockerproxy.com/open-webui/open-webui:main ghcr.io/open-webui/open-webui:main</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除代理镜像</span></span><br><span class="line">docker rmi ghcr.dockerproxy.com/open-webui/open-webui:main</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p>–authenticationDatabase<br>表示去（xhw_road）库检查用户权限，非必需。如果是admin,但是admin库，无road_admin登录用户，就会登录不上。</p>
+<h2 id="下载模型"><a href="#下载模型" class="headerlink" title="下载模型"></a>下载模型</h2><p>具体要下载哪些模型，可以从模型仓库library选择。</p>
+<ul>
+<li>0.5b,b是billion(十亿)的简写，表示该模型有5亿个参数。<br><img src="/../images/ai/%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B.png" alt="图片"></li>
+</ul>
+<p>等待下载完成后，选中模型就可以对话了。</p>
+<p><img src="/../images/ai/%E5%AF%B9%E8%AF%9D.png" alt="图片"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论. </span>
